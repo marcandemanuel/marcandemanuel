@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+    $('#myDiv').on('click', function(){
+        var clicks = $(this).data('clicks') || 0;
+        $(this).data('clicks', clicks+1);
+        if($(this).data('clicks') >=3 ) $(this).fadeOut(1000);
+    });
+});
+  </script>
+  <script type="text/javascript">
+  const onConfirmRefresh = function (event) {
+  event.preventDefault();
+  return event.returnValue = "Are you sure you want to leave the page?";
+  alert("If you reload the page the mission will fail.");
+}
+
+window.addEventListener("beforeunload", onConfirmRefresh, { capture: true });
+  </script>
+  <style type="text/css">
+  a {
+    border-style: solid;
+    margin: 10px;
+    padding: 50px 0px;
+    border-color: white;
+    border-radius: 10px;
+    color: white;
+    font-family: FreeMono, monospace;
+  }
+
+  body {
+    background: grey;
+  }
+  </style>
+</head>
+<body>
+  <div style="text-align: center" id="myDiv">
+  <div style="padding: 50px; font-family: FreeMono, monospace; font-size: 30px; color: white">You can click three times, then the message will be destroyed.</div>
+  <div style="display: flex">
+  <div id="spoiler" style="display:none; width: 500px; padding: 50px 0px; margin: 10px; border-style: solid; text-align: center; font-family: FreeMono, monospace; border-radius: 10px">mate-PC</div> 
+<a onclick="showSpoiler(this,'spoiler')" style="width: 500px; text-align: center; border-style: solid">unknown</a>
+<script>
+function showSpoiler(buttonNode, spoilerId) {
+    document.getElementById(spoilerId).style.display='block';
+    buttonNode.style.display='none';
+}
+</script>
+
+  <div id="spoiler2" style="display:none; width: 500px; padding: 50px 0px; text-align: center; margin: 10px; border-style: solid; font-family: FreeMono, monospace; border-radius: 10px">You are wrong</div> 
+<a onclick="showSpoiler(this,'spoiler2')" style="width: 500px; text-align: center">unknown</a>
+<script>
+function showSpoiler(buttonNode, spoilerId) {
+    document.getElementById(spoilerId).style.display='block';
+    buttonNode.style.display='none';
+}
+</script>
+
+  <div id="spoiler3" style="display:none; width: 500px; padding: 50px 0px; text-align: center; border-radius: 10px; margin: 10px; font-family: FreeMono, monospace; border-style: solid">You are wrong</div> 
+<a onclick="showSpoiler(this,'spoiler3')" style="width: 500px; text-align: center">unknown</a>
+<script>
+function showSpoiler(buttonNode, spoilerId) {
+    document.getElementById(spoilerId).style.display='block';
+    buttonNode.style.display='none';
+}
+</script>
+  </div>
+
+  <div style="display: flex">
+  <div id="spoiler4" style="display:none; width: 500px; padding: 50px 0px; text-align: center; border-radius: 10px; margin: 10px; font-family: FreeMono, monospace; border-style: solid">You are wrong</div> 
+<a onclick="showSpoiler(this,'spoiler4')" style="width: 500px; text-align: center">unknown</a>
+<script>
+function showSpoiler(buttonNode, spoilerId) {
+    document.getElementById(spoilerId).style.display='block';
+    buttonNode.style.display='none';
+}
+</script>
+
+  <div id="spoiler5" style="display:none; width: 500px; padding: 50px 0px; text-align: center; border-radius: 10px; margin: 10px; font-family: FreeMono, monospace; border-style: solid">background</div> 
+<a onclick="showSpoiler(this,'spoiler5')" style="width: 500px; text-align: center">unknown</a>
+<script>
+function showSpoiler(buttonNode, spoilerId) {
+    document.getElementById(spoilerId).style.display='block';
+    buttonNode.style.display='none';
+}
+</script>
+
+  <div id="spoiler6" style="display:none; width: 500px; padding: 50px 0px; text-align: center; border-radius: 10px; margin: 10px; font-family: FreeMono, monospace; border-style: solid">You are wrong</div> 
+<a onclick="showSpoiler(this,'spoiler6')" style="width: 500px; text-align: center">unknown</a>
+<script>
+function showSpoiler(buttonNode, spoilerId) {
+    document.getElementById(spoilerId).style.display='block';
+    buttonNode.style.display='none';
+}
+</script>
+  </div>
+
+  <div style="display: flex">
+  <div id="spoiler7" style="display:none; width: 500px; padding: 50px 0px; text-align: center; border-radius: 10px; margin: 10px; font-family: FreeMono, monospace; border-style: solid">You are wrong</div> 
+<a onclick="showSpoiler(this,'spoiler7')" style="width: 500px; text-align: center">unknown</a>
+<script>
+function showSpoiler(buttonNode, spoilerId) {
+    document.getElementById(spoilerId).style.display='block';
+    buttonNode.style.display='none';
+}
+</script>
+
+  <div id="spoiler8" style="display:none; width: 500px; padding: 50px 0px; text-align: center; border-radius: 10px; margin: 10px; font-family: FreeMono, monospace; border-style: solid">sky</div> 
+<a onclick="showSpoiler(this,'spoiler8')" style="width: 500px; text-align: center">unknown</a>
+<script>
+function showSpoiler(buttonNode, spoilerId) {
+    document.getElementById(spoilerId).style.display='block';
+    buttonNode.style.display='none';
+}
+</script>
+
+  <div id="spoiler9" style="display:none; width: 500px; padding: 50px 0px; text-align: center; border-radius: 10px; margin: 10px; font-family: FreeMono, monospace; border-style: solid">You are wrong</div> 
+<a onclick="showSpoiler(this,'spoiler9')" style="width: 500px; text-align: center">unknown</a>
+<script>
+function showSpoiler(buttonNode, spoilerId) {
+    document.getElementById(spoilerId).style.display='block';
+    buttonNode.style.display='none';
+}
+</script>
+  </div>
+</div>
+</body>
+</html>
